@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+html {
+	background-color: black;
+    width: 100%;
+}
+
+body {
+    background-color: orange;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1020px;
+    min-width: 640px;
+}
+
+body > div.slideshow-container > div.caseProblemSlides > h1 {
+    text-align: justify;
+    color: black;
+}
+
+/**************************** Carousel Styles Section ***********************************/
+* {box-sizing:border-box}
+
+div.Containers > img {
+    height: 900px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by defauwidth: 
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  background: cornflowerblue;
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: cornsilk;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: gray;
+}
+
+/* Caption Info */
+.Info {
+  background: cornflowerblue;
+  color: #e3e3e3;
+  font-size: 30px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: justify;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  background: cornflowerblue;
+  color: cornsilk;
+  font-size: 30px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+/**************************** Carousel Styles Section ***********************************/
+
+/**************************** Header Styles Section ***********************************/
+/*
+body > header > p 
+body > header > img
+body > header > nav > ul > li
+*/
+
+header {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, san-serif;
+    font-size: 3.5em;
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+}
+
+header > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > header > nav > ul > li {
+    list-style: none;
+    background: black;
+    color: black;
+    padding-bottom: 20px;
+    display: inline-flex;
+    /*padding-right: 89px;*/
+
+}
+
+
+/**************************** Header Styles Section ***********************************/
+
+
+/**************************** NavBar Styles Section ***********************************/
+nav > ul > li > a {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, san-serif;
+  padding: 10px;
+  font-size: 70%;
+}
+
+nav > ul > li> a:visited, nav > ul > li > a:link {
+  color: white;
+  text-decoration: none;
+  background-color: hsla(0, 0%, 42%, 0.4);
+}
+/**************************** NavBar Styles Section ***********************************/
+
+
+/**************************** Carousel Styles Section ***********************************/
+* {box-sizing: border-box}
+.caseProblemSlides, .codingChallengeSlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/**************************** Carousel Styles Section ***********************************/
+
+
+
+/**************************** Footer Styles Section ***********************************/
+
+address {
+  font-style: normal;
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+body > footer > div {
+	margin: 0 auto;
+	width: 12%;
+    display: block;   
+}
+
+body > footer > div > h1, img {
+    justify-items: center;
+}
+
+body > footer > section
+{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+body > footer > section > div.card
+{
+
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.card {
+   border: 1px solid rgb(81, 81, 81);
+   border-radius: 20px;
+   box-shadow: inset 0px 0px 3px teal, inset 0px 0px 10px teal, inset 0px 0px 20px teal, 0px 0px 25px 1px black;
+   margin: 15px;
+   height: 175px;
+
+}
+
+div.card header {
+   background-color: rgba(179,244,227,0.3);
+   width: 100%;
+   height: 45px;
+   border-bottom: teal 4px solid;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;   
+}
+
+div.card header h4 {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   color: teal;
+   text-align: center;
+   font-size: .7em;
+   line-height: 1em;
+   margin: 5px 0px;
+}
+
+div.card img {
+   display: block;
+   width: 80px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+}
+
+div.card footer {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";   
+   color: teal;
+   
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   font-size: 1.2em;
+
+   font-weight: bold;
+   text-align: center;
+   height: 50px;
+   width: 100%;
+   border-top: 3px solid teal;
+}
+
+body > section > div.card
+{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    align-items: center;
+}
